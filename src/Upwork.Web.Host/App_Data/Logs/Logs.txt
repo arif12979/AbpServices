@@ -24999,3 +24999,414 @@ SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAba
 FROM [AbpBackgroundJobs] AS [a]
 WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
 ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+DEBUG 2021-08-29 00:30:02,400 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2021-08-29 00:30:04,366 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2021-08-29 00:30:04,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Upwork.Web.Host.Startup.UpworkWebHostModule, Upwork.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,390 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Upwork.UpworkWebCoreModule, Upwork.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,391 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Upwork.UpworkApplicationModule, Upwork.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,391 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Upwork.UpworkCoreModule, Upwork.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,391 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,392 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,392 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,392 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,416 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Upwork.EntityFrameworkCore.UpworkEntityFrameworkModule, Upwork.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,417 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,417 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:04,424 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2021-08-29 00:30:05,074 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-08-29 00:30:05,074 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-08-29 00:30:05,074 [1    ] o.Configuration.LanguageManagementConfig - Converted Upwork (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-08-29 00:30:05,074 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-08-29 00:30:06,989 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Upwork.EntityFrameworkCore.UpworkDbContext, Upwork.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-08-29 00:30:07,531 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2021-08-29 00:30:07,688 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2021-08-29 00:30:07,719 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2021-08-29 00:30:07,739 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Upwork
+DEBUG 2021-08-29 00:30:07,743 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2021-08-29 00:30:07,754 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2021-08-29 00:30:07,769 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Upwork.MultiTenancy.Tenant, Upwork.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Upwork.Authorization.Users.User, Upwork.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2021-08-29 00:30:07,944 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2021-08-29 00:30:07,944 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2021-08-29 00:30:07,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.Users.Dto.CreateUserDto
+DEBUG 2021-08-29 00:30:07,972 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.Users.Dto.UserDto
+DEBUG 2021-08-29 00:30:07,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2021-08-29 00:30:07,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.Sessions.Dto.UserLoginInfoDto
+DEBUG 2021-08-29 00:30:07,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.Roles.Dto.PermissionDto
+DEBUG 2021-08-29 00:30:07,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2021-08-29 00:30:07,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.MultiTenancy.Dto.TenantDto
+DEBUG 2021-08-29 00:30:07,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Upwork.Countries.Dto.CountryListOutputDto
+WARN  2021-08-29 00:30:11,112 [1    ] oft.EntityFrameworkCore.Model.Validation - Entity 'Edition' has a global query filter defined and is the required end of a relationship with the entity 'EditionFeatureSetting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+INFO  2021-08-29 00:30:11,631 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:12,942 [10   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:14,775 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (148ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[DisplayName], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name]
+FROM [AbpEditions] AS [a]
+WHERE [a].[Name] = N'Standard'
+INFO  2021-08-29 00:30:14,807 [10   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (86ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:15,044 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,051 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,054 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,059 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,064 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,068 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,071 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,075 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,079 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,083 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,087 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,091 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,094 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND ([a].[Name] = @__language_Name_1)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,211 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (102ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE [a].[TenantId] IS NULL AND ([a].[Name] = N'Admin')
+INFO  2021-08-29 00:30:15,468 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (119ms) [Parameters=[@__adminRoleForHost_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AbpPermissions] AS [a]
+WHERE ([a].[Discriminator] = N'RolePermissionSetting') AND ([a].[TenantId] IS NULL AND ([a].[RoleId] = @__adminRoleForHost_Id_0))
+INFO  2021-08-29 00:30:15,565 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (69ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE [a].[TenantId] IS NULL AND ([a].[UserName] = N'admin')
+INFO  2021-08-29 00:30:15,814 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (47ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE (([a].[Name] = @__name_0) AND [a].[TenantId] IS NULL) AND [a].[UserId] IS NULL) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,819 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE (([a].[Name] = @__name_0) AND [a].[TenantId] IS NULL) AND [a].[UserId] IS NULL) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,823 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE (([a].[Name] = @__name_0) AND [a].[TenantId] IS NULL) AND [a].[UserId] IS NULL) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2021-08-29 00:30:15,935 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConnectionString], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EditionId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenancyName]
+FROM [AbpTenants] AS [a]
+WHERE [a].[TenancyName] = N'Default'
+INFO  2021-08-29 00:30:15,991 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE ([a].[TenantId] = @___tenantId_0) AND ([a].[Name] = N'Admin')
+INFO  2021-08-29 00:30:16,006 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@___tenantId_0='?' (DbType = Int32), @__adminRole_Id_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AbpPermissions] AS [a]
+WHERE ([a].[Discriminator] = N'RolePermissionSetting') AND (([a].[TenantId] = @___tenantId_0) AND ([a].[RoleId] = @__adminRole_Id_1))
+INFO  2021-08-29 00:30:16,024 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE ([a].[TenantId] = @___tenantId_0) AND ([a].[UserName] = N'admin')
+INFO  2021-08-29 00:30:16,281 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:16,360 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (31ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[DisplayName], [a].[Icon], [a].[IsDeleted], [a].[IsDisabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId]
+FROM [AbpLanguages] AS [a]
+WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR ([a].[IsDeleted] <> CAST(1 AS bit))) AND ((@__ef_filter__p_1 = CAST(1 AS bit)) OR [a].[TenantId] IS NULL)
+INFO  2021-08-29 00:30:16,474 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:16,521 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (36ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId], [a].[UserId], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR [a].[TenantId] IS NULL) AND ([a].[UserId] IS NULL AND [a].[TenantId] IS NULL)
+INFO  2021-08-29 00:30:16,568 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2021-08-29 00:30:19,250 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Arif Ur Rehman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2021-08-29 00:30:19,706 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/ - -
+INFO  2021-08-29 00:30:19,913 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:19,922 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:20,537 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Upwork.Web.Host.Controllers.HomeController.Index (Upwork.Web.Host)'
+INFO  2021-08-29 00:30:20,694 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Upwork.Web.Host.Controllers.HomeController (Upwork.Web.Host).
+INFO  2021-08-29 00:30:20,764 [8    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:21,084 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (56ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT [Id]
+FROM [AbpAuditLogs]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+INFO  2021-08-29 00:30:21,300 [7    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2021-08-29 00:30:21,317 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Upwork.Web.Host.Controllers.HomeController.Index (Upwork.Web.Host) in 609.6384ms
+INFO  2021-08-29 00:30:21,320 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Upwork.Web.Host.Controllers.HomeController.Index (Upwork.Web.Host)'
+INFO  2021-08-29 00:30:21,369 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+INFO  2021-08-29 00:30:21,397 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/ - - - 302 - - 1696.9442ms
+INFO  2021-08-29 00:30:21,713 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 364.1515ms
+INFO  2021-08-29 00:30:22,106 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - -
+INFO  2021-08-29 00:30:22,167 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+INFO  2021-08-29 00:30:24,254 [8    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2021-08-29 00:30:24,254 [7    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2021-08-29 00:30:24,384 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:24,426 [10   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId], [a].[UserId], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR [a].[TenantId] IS NULL) AND (([a].[UserId] = @__userId_0) AND [a].[TenantId] IS NULL)
+INFO  2021-08-29 00:30:24,738 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Upwork.Web.Host.Controllers.AntiForgeryController.SetCookie (Upwork.Web.Host)'
+INFO  2021-08-29 00:30:24,750 [10   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Upwork.Web.Host.Controllers.AntiForgeryController (Upwork.Web.Host).
+INFO  2021-08-29 00:30:24,793 [10   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:24,806 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT [Id]
+FROM [AbpAuditLogs]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+INFO  2021-08-29 00:30:24,841 [7    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2021-08-29 00:30:25,001 [15   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:25,020 [15   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:25,090 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Upwork.Web.Host.Controllers.AntiForgeryController.SetCookie (Upwork.Web.Host) in 336.6307ms
+INFO  2021-08-29 00:30:25,095 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Upwork.Web.Host.Controllers.AntiForgeryController.SetCookie (Upwork.Web.Host)'
+INFO  2021-08-29 00:30:25,101 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - - 200 101 application/json;+charset=utf-8 2993.2108ms
+INFO  2021-08-29 00:30:25,184 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3018.0359ms
+INFO  2021-08-29 00:30:30,067 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:30,084 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:35,103 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:35,111 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:40,136 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:40,165 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:45,180 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:45,187 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:50,206 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:50,215 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:30:55,234 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:30:55,251 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:00,270 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:00,278 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:05,295 [15   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:05,313 [15   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:10,347 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:10,366 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:15,394 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:15,419 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:20,429 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:20,435 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:25,456 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:25,467 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:30,483 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:30,491 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:35,509 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:35,526 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:40,553 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:40,573 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:45,598 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:45,620 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:50,633 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:50,654 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:31:55,682 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:31:55,704 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:32:00,727 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:32:00,741 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:32:05,758 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:32:05,766 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:32:10,791 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:32:10,797 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:32:15,816 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:32:15,834 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+INFO  2021-08-29 00:32:20,865 [7    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 5.0.8 initialized 'UpworkDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+INFO  2021-08-29 00:32:20,881 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__Now_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[IsAbandoned], [a].[JobArgs], [a].[JobType], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__Now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
